@@ -1,0 +1,100 @@
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(120, 120, 128, 0.2);
+  border-radius: 2px;
+  background-image: linear-gradient(#007aff, #007aff);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.12),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.12),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider::-ms-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.12),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.24),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.slider::-moz-range-thumb:hover {
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.24),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.slider::-ms-thumb:hover {
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.24),
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.slider::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.slider::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.slider-input-container {
+  margin: 20px 0;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  color: #374957;
+  font-size: 17px;
+}
+
+.slider-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: left;
+  color: rgba(60, 60, 67, 0.6);
+}
