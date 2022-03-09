@@ -2,11 +2,11 @@
   padding: 16px;
 }
 
-.quantities-container {
-  margin-bottom: 16px;
+.section {
+  margin-bottom: 32px;
 }
 
-.quantities-container h2 {
+.section h2 {
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(60, 60, 67, 0.6);

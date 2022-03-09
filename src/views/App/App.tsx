@@ -68,7 +68,7 @@ const App = (): JSX.Element => {
   };
   return (
     <div className="App">
-      <div className="quantities-container">
+      <div className="quantities-container section">
         <h2>Quantities</h2>
         <div className="quantity-slider-container">
           <Slider
@@ -108,6 +108,12 @@ const App = (): JSX.Element => {
             onChange={handleCupsChange}
           />
         </div>
+      </div>
+      <div className="quantities-container section">
+        <h2>Preferences</h2>
+      </div>
+      <div className="quantities-container section">
+        <h2>Pours</h2>
       </div>
     </div>
   );
