@@ -21,3 +21,19 @@
 .hint {
   font-size: 11px;
 }
+
+.pour-container {
+  display: grid;
+  gap: 1px;
+}
+
+.pour {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  background-color: #007aff;
+  color: #fff;
+  flex: 1;
+}

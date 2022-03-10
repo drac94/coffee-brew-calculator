@@ -44,7 +44,10 @@ const Slider = ({
     <div className="slider-container">
       <div className="slider-header">
         <span>{title}</span>
-        <span>{value}</span>
+        <span>
+          {value}
+          {unit}
+        </span>
       </div>
       <div className="slider-input-container">
         <input
