@@ -1,0 +1,42 @@
+.segmented-picker-options {
+  display: grid;
+  background-color: rgba(118, 118, 128, 0.12);
+  border-radius: 9px;
+  padding: 2px;
+  align-items: center;
+}
+
+.segmented-picker-title {
+  color: #374957;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.segmented-picker-option-wrapper {
+  display: flex;
+}
+
+.segmented-picker-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.segmented-picker-custom {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 8px;
+  flex: 1;
+}
+
+.segmented-picker-option-wrapper
+  .segmented-picker-input:checked
+  ~ .segmented-picker-custom {
+  border-radius: 7px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.04), 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
