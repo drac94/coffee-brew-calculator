@@ -132,11 +132,15 @@ const App = (): JSX.Element => {
           className="pour-container"
           style={{ gridTemplateColumns: pourGridColumns }}
         >
-          {pours.flavor.map((p) => (
-            <span className="pour">{Math.round(p)}gr</span>
+          {pours.flavor.map((p, i) => (
+            <span className="pour" key={`flavorPour${i}`}>
+              {Math.round(p)}gr
+            </span>
           ))}
-          {pours.concentration.map((p) => (
-            <span className="pour">{Math.round(p)}gr</span>
+          {pours.concentration.map((p, i) => (
+            <span className="pour" key={`concentrationPour${i}`}>
+              {Math.round(p)}gr
+            </span>
           ))}
         </div>
         <span className="hint">
