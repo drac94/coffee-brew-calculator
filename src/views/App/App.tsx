@@ -3,131 +3,26 @@ import React, { ChangeEvent, useReducer, useState } from 'react';
 import SegmentedPicker from '../../components/SegmentedPicker';
 import Slider from '../../components/Slider';
 
+import {
+  concentrationOptions,
+  flavorOptions,
+  roastOptions,
+  temperatures,
+} from './constants';
+import {
+  actions as quantitiesReducerActions,
+  initialQuantities,
+  quantitiesReducer,
+} from './quantitiesReducer';
+import { calculatePourGridColumns, calculatePours } from './utils';
+
 import './App.css';
 
-type QuantitiesState = {
-  cups: number;
-  coffee: number;
-  water: number;
-};
-
-type QuantitiesAction =
-  | { type: 'increaseCups'; payload: number }
-  | { type: 'increaseCoffee'; payload: number }
-  | { type: 'increaseWater'; payload: number };
-
-const actions: {
-  [key: string]: 'increaseCups' | 'increaseCoffee' | 'increaseWater';
-} = {
-  cups: 'increaseCups',
-  coffee: 'increaseCoffee',
-  water: 'increaseWater',
-};
-
-const initialQuantities = {
-  cups: 1,
-  coffee: 16,
-  water: 236,
-};
-
-const flavorOptions = ['standard', 'sweet', 'bright'];
-const concentrationOptions = ['light', 'medium', 'strong'];
-const roastOptions = ['light', 'medium', 'dark'];
-
-const temperatures: {
-  [key: string]: number;
-} = {
-  light: 93,
-  medium: 88,
-  dark: 83,
-};
-
-const reducer = (state: QuantitiesState, action: QuantitiesAction) => {
-  const { type, payload } = action;
-  switch (type) {
-    case actions.cups:
-      return {
-        cups: payload,
-        coffee: Math.round(payload * initialQuantities.coffee),
-        water: Math.round(payload * initialQuantities.water),
-      };
-    case actions.coffee:
-      return {
-        cups: Math.round(payload / initialQuantities.coffee),
-        coffee: payload,
-        water: Math.round(
-          (payload * initialQuantities.water) / initialQuantities.coffee
-        ),
-      };
-    case actions.water:
-      return {
-        cups: Math.round(
-          (payload * initialQuantities.cups) / initialQuantities.water
-        ),
-        coffee: Math.round(
-          (payload * initialQuantities.coffee) / initialQuantities.water
-        ),
-        water: payload,
-      };
-    default:
-      return state;
-  }
-};
-
-const flavors: {
-  [key: string]: number[];
-} = {
-  standard: [50, 50],
-  sweet: [41.66, 58.34],
-  bright: [58.34, 41.66],
-};
-
-const concentrations: {
-  [key: string]: number[];
-} = {
-  light: [100],
-  medium: [50, 50],
-  strong: [33.33, 33.33, 33.33],
-};
-
-const calculatePours = ({
-  water,
-  flavor,
-  concentration,
-}: {
-  water: number;
-  flavor: string;
-  concentration: string;
-}) => {
-  const flavorWater = water * 0.4;
-  const concentrationWater = water - flavorWater;
-  return {
-    flavor: flavors[flavor].map((f) => flavorWater * (f / 100)),
-    concentration: concentrations[concentration].map(
-      (c) => concentrationWater * (c / 100)
-    ),
-  };
-};
-
-const calculatePourGridColumns = (
-  pours: {
-    flavor: number[];
-    concentration: number[];
-  },
-  water: number
-): string => {
-  const columns: string[] = [];
-  pours.flavor.forEach((pour) => {
-    columns.push((pour * 100) / water + '%');
-  });
-  pours.concentration.forEach((pour) => {
-    columns.push((pour * 100) / water + '%');
-  });
-  return columns.join(' ');
-};
-
 const App = (): JSX.Element => {
-  const [quantities, dispatch] = useReducer(reducer, initialQuantities);
+  const [quantities, dispatch] = useReducer(
+    quantitiesReducer,
+    initialQuantities
+  );
   // TODO type this better
   const [roast, setRoast] = useState('light');
   const [preferences, setPreferences] = useState({
@@ -136,7 +31,7 @@ const App = (): JSX.Element => {
   });
   const handleQuantitiesChange = (e: ChangeEvent<HTMLInputElement>) => {
     dispatch({
-      type: actions[e.currentTarget.name],
+      type: quantitiesReducerActions[e.currentTarget.name],
       payload: Number(e.currentTarget.value),
     });
   };
@@ -161,6 +56,7 @@ const App = (): JSX.Element => {
 
   return (
     <div className="App">
+      <h1>4:6 Brewing Method Calculator</h1>
       <div className="quantities-container section">
         <h2>Quantities</h2>
         <div className="quantity-slider-container">
