@@ -1,6 +1,7 @@
 {
   "name": "minimal-react-template",
   "version": "0.1.0",
+  "homepage": "https://drac94.github.io/coffee-brew-calculator",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
@@ -16,7 +17,9 @@
     "eject": "react-scripts eject",
     "format": "prettier --write './**/*.{js,md,ts,tsx,jsx}'",
     "lint": "eslint --cache --fix --ext './**/*.{js,ts,tsx,jsx}' --format=pretty ./",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -31,23 +34,24 @@
     ]
   },
   "devDependencies": {
-    "typescript": "^4.5.2",
     "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^27.0.3",
     "@types/node": "^12.20.37",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "@testing-library/react": "^12.1.2",
-    "@types/jest": "^27.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-pretty": "^2.1.1",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-jest-dom": "^3.9.2",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "prettier": "2.5.0"
+    "prettier": "2.5.0",
+    "typescript": "^4.5.2"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": "eslint --cache --fix --format=pretty ./"

@@ -1,5 +1,7 @@
 .App {
   padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .App h1 {
@@ -20,7 +22,7 @@
 .quantity-slider-container {
   padding: 16px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid #c6c6c8;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .hint {
