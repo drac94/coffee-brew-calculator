@@ -2,9 +2,14 @@ import React, { ChangeEvent } from 'react';
 
 import './SegmentedPicker.css';
 
+type Option = {
+  label: string;
+  value: string;
+};
+
 type Props = {
   title?: string;
-  options: string[];
+  options: Option[];
   name: string;
   selectedValue: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -34,11 +39,11 @@ const SegmentedPicker = ({
               name={name}
               type="radio"
               className="segmented-picker-input"
-              defaultChecked={option === selectedValue}
+              defaultChecked={option.value === selectedValue}
               onChange={onChange}
-              value={option}
+              value={option.value}
             />
-            <span className="segmented-picker-custom">{option}</span>
+            <span className="segmented-picker-custom">{option.label}</span>
           </label>
         ))}
       </div>
