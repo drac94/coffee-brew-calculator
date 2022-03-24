@@ -1,7 +1,10 @@
 import React, { ChangeEvent, useReducer, useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import SegmentedPicker from '../../components/SegmentedPicker';
 import Slider from '../../components/Slider';
+import YoutubeEmbed from '../../components/YoutubeEmbed';
 
 import {
   concentrationOptions,
@@ -56,7 +59,8 @@ const FourSix = (): JSX.Element => {
 
   return (
     <div className="four-six-container">
-      <h1>4:6 Brewing Method Calculator</h1>
+      <Link to="/">{`< Home`}</Link>
+      <h1>4:6 Calculator</h1>
       <div className="quantities-container section">
         <h2>Quantities</h2>
         <div className="quantity-slider-container">
@@ -147,6 +151,10 @@ const FourSix = (): JSX.Element => {
           Each pour should be timed so that the hot water has almost completely
           passed through the filter before pouring again. 1ml = 1gr
         </span>
+      </div>
+      <div className="section">
+        <h2>What is the 4:6 method?</h2>
+        <YoutubeEmbed embedId="wmCW8xSWGZY" />
       </div>
     </div>
   );

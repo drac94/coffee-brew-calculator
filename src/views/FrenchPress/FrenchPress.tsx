@@ -1,5 +1,7 @@
 import React, { ChangeEvent, useReducer } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import SegmentedPicker from '../../components/SegmentedPicker';
 import Slider from '../../components/Slider';
 
@@ -35,6 +37,7 @@ const FrenchPress = (): JSX.Element => {
 
   return (
     <div className="french-press-container">
+      <Link to="/">{`< Home`}</Link>
       <h1>French Press Calculator</h1>
       <div className="quantities-container section">
         <h2>Quantities</h2>
