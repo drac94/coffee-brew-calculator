@@ -1,34 +1,34 @@
 {
   "files": {
-    "main.css": "/coffee-brew-calculator/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/coffee-brew-calculator/static/js/main.e6ed92ca.chunk.js",
-    "main.js.map": "/coffee-brew-calculator/static/js/main.e6ed92ca.chunk.js.map",
-    "runtime-main.js": "/coffee-brew-calculator/static/js/runtime-main.d9e2a3aa.js",
-    "runtime-main.js.map": "/coffee-brew-calculator/static/js/runtime-main.d9e2a3aa.js.map",
-    "static/js/2.e431bffe.chunk.js": "/coffee-brew-calculator/static/js/2.e431bffe.chunk.js",
-    "static/js/2.e431bffe.chunk.js.map": "/coffee-brew-calculator/static/js/2.e431bffe.chunk.js.map",
+    "main.css": "/coffee-brew-calculator/static/css/main.a25bd016.chunk.css",
+    "main.js": "/coffee-brew-calculator/static/js/main.a4509a09.chunk.js",
+    "main.js.map": "/coffee-brew-calculator/static/js/main.a4509a09.chunk.js.map",
+    "runtime-main.js": "/coffee-brew-calculator/static/js/runtime-main.4d96433f.js",
+    "runtime-main.js.map": "/coffee-brew-calculator/static/js/runtime-main.4d96433f.js.map",
+    "static/js/2.d9ad6b90.chunk.js": "/coffee-brew-calculator/static/js/2.d9ad6b90.chunk.js",
+    "static/js/2.d9ad6b90.chunk.js.map": "/coffee-brew-calculator/static/js/2.d9ad6b90.chunk.js.map",
     "static/css/3.2a5c4f19.chunk.css": "/coffee-brew-calculator/static/css/3.2a5c4f19.chunk.css",
-    "static/js/3.90b80750.chunk.js": "/coffee-brew-calculator/static/js/3.90b80750.chunk.js",
-    "static/js/3.90b80750.chunk.js.map": "/coffee-brew-calculator/static/js/3.90b80750.chunk.js.map",
+    "static/js/3.c230baf9.chunk.js": "/coffee-brew-calculator/static/js/3.c230baf9.chunk.js",
+    "static/js/3.c230baf9.chunk.js.map": "/coffee-brew-calculator/static/js/3.c230baf9.chunk.js.map",
     "static/css/4.121e8318.chunk.css": "/coffee-brew-calculator/static/css/4.121e8318.chunk.css",
-    "static/js/4.405b9b9a.chunk.js": "/coffee-brew-calculator/static/js/4.405b9b9a.chunk.js",
-    "static/js/4.405b9b9a.chunk.js.map": "/coffee-brew-calculator/static/js/4.405b9b9a.chunk.js.map",
+    "static/js/4.78f37cc1.chunk.js": "/coffee-brew-calculator/static/js/4.78f37cc1.chunk.js",
+    "static/js/4.78f37cc1.chunk.js.map": "/coffee-brew-calculator/static/js/4.78f37cc1.chunk.js.map",
     "static/css/5.8b58eaef.chunk.css": "/coffee-brew-calculator/static/css/5.8b58eaef.chunk.css",
-    "static/js/5.4577b106.chunk.js": "/coffee-brew-calculator/static/js/5.4577b106.chunk.js",
-    "static/js/5.4577b106.chunk.js.map": "/coffee-brew-calculator/static/js/5.4577b106.chunk.js.map",
+    "static/js/5.96389eb6.chunk.js": "/coffee-brew-calculator/static/js/5.96389eb6.chunk.js",
+    "static/js/5.96389eb6.chunk.js.map": "/coffee-brew-calculator/static/js/5.96389eb6.chunk.js.map",
     "static/js/6.ab7b13f8.chunk.js": "/coffee-brew-calculator/static/js/6.ab7b13f8.chunk.js",
     "static/js/6.ab7b13f8.chunk.js.map": "/coffee-brew-calculator/static/js/6.ab7b13f8.chunk.js.map",
     "index.html": "/coffee-brew-calculator/index.html",
     "static/css/3.2a5c4f19.chunk.css.map": "/coffee-brew-calculator/static/css/3.2a5c4f19.chunk.css.map",
     "static/css/4.121e8318.chunk.css.map": "/coffee-brew-calculator/static/css/4.121e8318.chunk.css.map",
     "static/css/5.8b58eaef.chunk.css.map": "/coffee-brew-calculator/static/css/5.8b58eaef.chunk.css.map",
-    "static/css/main.6dea0f05.chunk.css.map": "/coffee-brew-calculator/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.e431bffe.chunk.js.LICENSE.txt": "/coffee-brew-calculator/static/js/2.e431bffe.chunk.js.LICENSE.txt"
+    "static/css/main.a25bd016.chunk.css.map": "/coffee-brew-calculator/static/css/main.a25bd016.chunk.css.map",
+    "static/js/2.d9ad6b90.chunk.js.LICENSE.txt": "/coffee-brew-calculator/static/js/2.d9ad6b90.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d9e2a3aa.js",
-    "static/js/2.e431bffe.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e6ed92ca.chunk.js"
+    "static/js/runtime-main.4d96433f.js",
+    "static/js/2.d9ad6b90.chunk.js",
+    "static/css/main.a25bd016.chunk.css",
+    "static/js/main.a4509a09.chunk.js"
   ]
 }
