@@ -1,11 +1,16 @@
 import React from 'react';
 
 import { render, screen } from '@testing-library/react';
+import { HashRouter } from 'react-router-dom';
 
-import App from './FourSix';
+import FourSix from './FourSix';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/4:6 Brewing Method Calculator/i);
+test('renders header', () => {
+  render(
+    <HashRouter>
+      <FourSix />
+    </HashRouter>
+  );
+  const headerElement = screen.getByText(/4:6 Calculator/i);
   expect(headerElement).toBeInTheDocument();
 });

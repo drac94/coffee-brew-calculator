@@ -31,3 +31,43 @@
   font-size: 17px;
   color: #fff;
 }
+
+.bitcoin-donation {
+  margin-top: 56px;
+}
+
+.bitcoin-donation img {
+  border: 1px solid #e8e8e8;
+  border-radius: 50px;
+}
+
+.bitcoin-code {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.bitcoin-address {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+
+.bitcoin-donation span {
+  font-weight: bold;
+  color: #007aff;
+  font-style: italic;
+  word-break: break-all;
+}
+
+.bitcoin-address button {
+  border-radius: 16px;
+  background-color: #007aff;
+  border: none;
+  color: #fff;
+  padding: 4px 12px;
+}
